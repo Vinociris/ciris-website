@@ -41,7 +41,6 @@ There is a hidden spam honeypot field. The Content Security Policy in `_headers`
 
 Search the files for `TODO` or `[` to find these:
 
-- ICO registration number (footer on every page, `[ZB number]`)
 - LinkedIn company page link (footer)
 - Official Cyber Essentials badge, once the certificate is issued (footer `badge-slot`)
 - Web3Forms access key (`contact.html`)
