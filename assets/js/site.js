@@ -24,6 +24,15 @@
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
+  /* ---------- Compact navigation once the main header scrolls away ---------- */
+  var mini = document.getElementById('mini-nav');
+  var mainHeader = document.querySelector('.site-header');
+  if (mini && mainHeader && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      mini.classList.toggle('show', !entries[0].isIntersecting);
+    }).observe(mainHeader);
+  }
+
   /* ---------- C mark becomes the 4D model ---------- */
   var net = document.getElementById('net');
   if (net) {
@@ -86,8 +95,10 @@
         play();
       }
     }
-    var replay = q('replay');
-    if (replay) replay.addEventListener('click', function () { if (reduceMotion) { draw(99999); } else { play(); } });
+    // Hovering over (or tapping) the graphic replays the animation once it has finished
+    var replayIfIdle = function () { if (!reduceMotion && !raf) play(); };
+    net.addEventListener('mouseenter', replayIfIdle);
+    net.addEventListener('click', replayIfIdle);
   }
 
   /* ---------- Enquiry form ---------- */
