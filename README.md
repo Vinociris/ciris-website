@@ -13,7 +13,7 @@ It is a plain static site: HTML, one stylesheet, one small script. There is no b
 | `about.html` | Our story and the founding directors |
 | `sustainability.html` | Environment, ethics and sustainability (tree pledge) |
 | `contact.html` | Enquiry form and contact details |
-| `privacy.html` | Privacy notice and cookies (draft, for director review) |
+| `privacy.html` | Privacy notice and cookies |
 | `accessibility.html` | Accessibility statement (draft, for director review) |
 | `404.html` | Page not found |
 
@@ -43,7 +43,6 @@ Search the files for `TODO` or `[` to find these:
 
 - Official Cyber Essentials badge, once the certificate is issued (footer `badge-slot`)
 - Web3Forms access key (`contact.html`)
-- Privacy notice: retention period and director sign-off
 - Accessibility statement: date prepared
 
 ## Editing
