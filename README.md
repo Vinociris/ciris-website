@@ -14,7 +14,7 @@ It is a plain static site: HTML, one stylesheet, one small script. There is no b
 | `sustainability.html` | Environment, ethics and sustainability (tree pledge) |
 | `contact.html` | Enquiry form and contact details |
 | `privacy.html` | Privacy notice and cookies |
-| `accessibility.html` | Accessibility statement (draft, for director review) |
+| `accessibility.html` | Accessibility statement |
 | `404.html` | Page not found |
 
 Shared files live in `assets/` (`css/site.css`, `js/site.js`, `img/`, `fonts/`). Security headers are set in `_headers`.
@@ -43,7 +43,6 @@ Search the files for `TODO` or `[` to find these:
 
 - Official Cyber Essentials badge, once the certificate is issued (footer `badge-slot`)
 - Web3Forms access key (`contact.html`)
-- Accessibility statement: date prepared
 
 ## Editing
 
